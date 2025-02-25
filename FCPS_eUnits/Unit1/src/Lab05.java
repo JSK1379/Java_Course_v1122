@@ -1,0 +1,45 @@
+import edu.fcps.karel2.Display;
+import edu.fcps.karel2.Robot;
+
+
+public class Lab05 {
+
+	/**
+	 * @param args
+	 */
+   public static void runTheRace(Racer arg)
+  {
+	arg.move();
+	arg.jumpRight();
+	arg.shuttle(2,7);
+   arg.shuttle(2,5);
+   arg.shuttle(2,3);
+   arg.turnAround();
+   arg.sprint(6);
+   arg.jumpLeft();
+   arg.move();
+   arg.put(15);
+   arg.turnAround();
+   arg.move();
+  }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Display.openWorld("../maps/shuttle.map");
+      Display.setSize(10,10);
+      Display.setSpeed(10);
+
+		Racer a1 = new Racer(1);
+      Racer a2 = new Racer(4);
+      Racer a3 = new Racer(7);
+      
+      runTheRace(a1);
+      runTheRace(a2);
+      runTheRace(a3);
+      
+ //     a.pickBeeper();
+ //     a.move();
+ //     a.turnLeft();
+ //     a.putBeeper();
+	}
+}
