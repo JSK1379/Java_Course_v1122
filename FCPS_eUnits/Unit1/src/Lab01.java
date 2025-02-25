@@ -14,15 +14,29 @@ public class Lab01 {
       Display.setSize(10,10);
       Display.setSpeed(5);
 
-		Robot karel = new Robot();
-      karel.move();
-      karel.pickBeeper();
-      karel.move();
-      karel.turnLeft();
-      karel.move();
-      karel.putBeeper();
-      karel.move();
-      karel.turnLeft();
-      karel.turnLeft();
+		Robot Lisa = new Robot();
+      Robot Pete = new Robot(4,5,Display.EAST,0);
+      Lisa.move();
+      Lisa.move();
+      Lisa.turnLeft();
+      Lisa.move();
+      Lisa.turnLeft();
+      Lisa.move();
+      Lisa.turnLeft();
+      Lisa.turnLeft();
+      Lisa.move();
+      Lisa.turnLeft();
+      Lisa.turnLeft();
+      Lisa.turnLeft();
+      Lisa.move();
+      Lisa.turnLeft();
+      Lisa.move();
+      Lisa.move();
+      Lisa.move();
+      
+      Lisa.pickBeeper();
+      Lisa.move();
+      Lisa.turnLeft();
+      Lisa.putBeeper();
 	}
 }
