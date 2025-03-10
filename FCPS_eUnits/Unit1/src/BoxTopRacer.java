@@ -19,10 +19,11 @@ import edu.fcps.karel2.Display;
            while(!rightIsClear()){
             move();
            }
-           turnLeft();
+           turnRight();
            move();
-           while(!rightIsClear()){
+           while(frontIsClear()){
             move();
            }
+           turnLeft();
          }
    	}

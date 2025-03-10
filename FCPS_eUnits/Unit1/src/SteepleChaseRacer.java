@@ -20,5 +20,6 @@ import edu.fcps.karel2.Display;
            while(frontIsClear()){
             move();
            }
+           turnLeft();
         }
    	}
