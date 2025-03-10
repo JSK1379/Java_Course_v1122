@@ -37,9 +37,6 @@ public class Lab05 {
       runTheRace(a2);
       runTheRace(a3);
       
- //     a.pickBeeper();
- //     a.move();
- //     a.turnLeft();
- //     a.putBeeper();
+
 	}
 }
