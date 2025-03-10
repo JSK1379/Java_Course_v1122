@@ -10,6 +10,7 @@ public class StepClimber extends Climber{
     {
 	    super(x);
 	 }
+    @Override
 	 public void climbUpRight() 
 	 {
        turnLeft();
@@ -17,6 +18,7 @@ public class StepClimber extends Climber{
        turnRight();
 	    move();
     }
+    @Override
     public void climbUpLeft() 
 	 {
        turnRight();
@@ -24,6 +26,7 @@ public class StepClimber extends Climber{
        turnLeft();
        move();
     }
+    @Override
     public void climbDownRight() 
 	 {
        move();
@@ -31,6 +34,7 @@ public class StepClimber extends Climber{
        move();
        turnLeft();
     }
+    @Override
     public void climbDownLeft() 
 	 {
        move();
