@@ -14,7 +14,6 @@ public class StepClimber extends Climber{
 	 {
        turnLeft();
 	    move();
-       move();
        turnRight();
 	    move();
     }
@@ -22,15 +21,13 @@ public class StepClimber extends Climber{
 	 {
        turnRight();
 	    move();
-       move();
        turnLeft();
-	    move();
+       move();
     }
     public void climbDownRight() 
 	 {
        move();
        turnRight();
-	    move();
        move();
        turnLeft();
     }
@@ -38,7 +35,6 @@ public class StepClimber extends Climber{
 	 {
        move();
        turnLeft();
-	    move();
        move();
        turnRight();
      }

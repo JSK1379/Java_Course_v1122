@@ -9,37 +9,37 @@ public class HillClimber extends Climber{
     
     public HillClimber(int x)
     {
-	    super(x, 1, Display.NORTH, 1);
+	    super(x);
 	 }
 	 public void climbUpRight() 
 	 {
        turnLeft();
 	    move();
-       move();
        turnRight();
+       move();
 	    move();
     }
     public void climbUpLeft() 
 	 {
        turnRight();
-	    move();
        move();
        turnLeft();
+       move();
 	    move();
     }
     public void climbDownRight() 
 	 {
        move();
+       move();
        turnRight();
-	    move();
        move();
        turnLeft();
     }
     public void climbDownLeft() 
 	 {
        move();
+       move();
        turnLeft();
-	    move();
        move();
        turnRight();
      }
