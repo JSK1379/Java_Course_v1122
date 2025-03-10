@@ -10,6 +10,19 @@ import edu.fcps.karel2.Display;
        @Override
        public void jumpRight()
         {
-           
-        }
+           turnLeft();
+           while(!rightIsClear()){
+            move();
+           }
+           turnRight();
+           move();
+           while(!rightIsClear()){
+            move();
+           }
+           turnLeft();
+           move();
+           while(!rightIsClear()){
+            move();
+           }
+         }
    	}
