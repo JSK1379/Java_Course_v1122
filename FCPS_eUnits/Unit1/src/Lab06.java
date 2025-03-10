@@ -55,13 +55,22 @@
          while(temp.frontIsClear()){
             while(temp.nextToABeeper()){
                temp.pickBeeper();
+              }
+               if(temp.frontIsClear()){
+                  temp.move();
+               }
+               while(temp.nextToABeeper()){
+               temp.pickBeeper();
+              }
             }
-            temp.move();
-         }
-      }
+        }
        public static void task_06()
       { //go to the end of the row of beepers, there is one gap
          Robot temp = new Robot(1, 6, Display.EAST, 0);
+         while(temp.nextToABeeper()){
+            temp.move();
+         }
+         temp.move();
          while(temp.nextToABeeper()){
             temp.move();
          }
