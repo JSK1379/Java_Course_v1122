@@ -10,7 +10,7 @@ public class Lab10 {
 		// TODO Auto-generated method stub
 
       
-      Display.openWorld("../maps/maze1.map");
+      Display.openWorld("../maps/maze2.map");
 		Display.setSize(10,10);
       Display.setSpeed(10);
 
