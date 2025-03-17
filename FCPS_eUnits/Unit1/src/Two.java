@@ -2,7 +2,7 @@ import edu.fcps.Digit;
 
 public class Two extends Digit{
 
-   public Tow(int x, int y){
+   public Two(int x, int y){
       super(x,y);
    }
    

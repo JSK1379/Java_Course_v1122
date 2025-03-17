@@ -14,7 +14,7 @@ public class Four extends Digit{
       segment4_Off();
       segment5_Off();
       segment6_On();
-      segment7_Off();
+      segment7_On();
       
   }
 }
