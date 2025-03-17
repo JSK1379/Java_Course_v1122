@@ -10,23 +10,16 @@ public class Lab15 {
 		// TODO Auto-generated method stub
 
       
-      Display.openWorld("../maps/maze2.map");
-		Display.setSize(10,10);
+		Display.setSize(15,15);
       Display.setSpeed(10);
 
-		Athlete k = new Athlete(1,1,Display.NORTH,Display.INFINITY);
+		Dancer a = new BackAndForthDancer(2,5,Display.NORTH,0);
+      Dancer a1 = new SquareDancer(5,5,Display.NORTH,0);
+      Dancer a2 = new SquareDancer_Larger(7,4,Display.NORTH,0);
       
-      while(!k.nextToABeeper()){
-         if(k.rightIsClear()){
-            k.turnRight();
-         }
-         if(k.frontIsClear()){
-            k.move();
-         }
-         if(!k.frontIsClear()&&!k.rightIsClear()){
-            k.turnLeft();
-         }
-      }
+      new Thread(a).start();
+      new Thread(a1).start();
+      new Thread(a2).start();
    }
 
 }
