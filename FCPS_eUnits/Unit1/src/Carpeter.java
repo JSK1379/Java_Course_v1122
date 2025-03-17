@@ -13,7 +13,7 @@
       }
       public void workCorner()
       {
-         if(nextToABeeper()){
+         if(!nextToABeeper()){
             putBeeper();
          }
       }
