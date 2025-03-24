@@ -15,7 +15,7 @@
        public static void main(String[] args)
       {
          String filename = JOptionPane.showInputDialog("What robot world?");
-         Display.openWorld("maps/"+filename+".map");
+         Display.openWorld("../maps/"+filename+".map");
          Display.setSize(8, 8);
          Display.setSpeed(10);
          //escape_the_maze( new Democrat() );
