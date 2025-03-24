@@ -17,7 +17,7 @@
        public int numOfBeepersInPile()
       {
          int n = 0;
-         if(nextToABeeper()){
+         while(nextToABeeper()){
             pickBeeper();
             n++;
          }
