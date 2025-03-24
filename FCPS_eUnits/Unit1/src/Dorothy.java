@@ -7,6 +7,11 @@
       }
       
       public boolean findPath(){
+      
+         if(!frontIsClear() && nextToABeeper()){
+            turnLeft();
+         }
+         
          if(!nextToABeeper()){
             turnAround();
             move();
@@ -15,8 +20,12 @@
          }
          if(!nextToABeeper()){
             turnAround();
+            move();
+            move();
          }
          if(!nextToABeeper()){
+            turnAround();
+            move();
             return false;
          }
          return true;
