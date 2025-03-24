@@ -26,6 +26,7 @@
          if(!nextToABeeper()){
             turnAround();
             move();
+            turnRight();
             return false;
          }
          return true;
