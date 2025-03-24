@@ -7,12 +7,26 @@
       }
       
       public boolean findPath(){
-         
-         
+         if(!nextToABeeper()){
+            turnAround();
+            move();
+            turnRight();
+            move();
+         }
+         if(!nextToABeeper()){
+            turnAround();
+            move();
+         }
+         if(!nextToABeeper()){
+            return false;
+         }
+         return true;
       }
       
       public void followPath(){
          
-         
+         while(nextToABeeper() && frontIsClear()){
+            move();
+         }
       }
    }
