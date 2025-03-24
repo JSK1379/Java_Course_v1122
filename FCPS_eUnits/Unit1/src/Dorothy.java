@@ -15,14 +15,12 @@
          }
          if(!nextToABeeper()){
             turnAround();
-            move();
          }
          if(!nextToABeeper()){
             return false;
          }
          return true;
       }
-      
       public void followPath(){
          
          while(nextToABeeper() && frontIsClear()){
