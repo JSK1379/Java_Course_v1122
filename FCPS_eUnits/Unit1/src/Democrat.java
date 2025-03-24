@@ -1,21 +1,21 @@
-public class Republican extends MazeEscaper   
+public class Democrat extends MazeEscaper   
    {
       public void walkDownCurrentSegment()
       {
          if(!nextToABeeper()){
-            if(!rightIsClear() && frontIsClear() ){
+            if(!leftIsClear() && frontIsClear()){
                move();
             }
          }
       }
       
       public void turnToTheNextSegment(){
-         if(rightIsClear()){
-            turnRight();
+         if(leftIsClear()){
+            turnLeft();
             move();
          }
          else{
-            turnLeft();
+            turnRight();
          }
       }
    }
