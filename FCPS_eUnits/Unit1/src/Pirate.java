@@ -31,7 +31,7 @@
          else if(beepers == 2){
             turnAround();
          }
-         else{
+         else if(beepers == 3){
             turnRight();
          }
       }
