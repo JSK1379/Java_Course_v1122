@@ -2,27 +2,39 @@
    import java.awt.*;
    import javax.swing.JPanel;
    import java.awt.image.BufferedImage;
+   import javax.swing.JOptionPane;
+
    public class Panel03 extends JPanel
    {
       private BufferedImage myImage;
       public Panel03()
       {
-         final int N = 400; //width & height of buffered-image
+         //final int N = 400; //width & height of buffered-image
+         String inputStr = JOptionPane.showInputDialog("width and hight of buffered-image","400");
+         if(inputStr == null){
+            return;
+         }
+         int N = Integer.parseInt(inputStr);
          myImage = new BufferedImage(N, N, BufferedImage.TYPE_INT_RGB);
          Graphics buffer = myImage.getGraphics();
-      
+         
+         inputStr = JOptionPane.showInputDialog("the number of lines","12");
+         if(inputStr==null){
+            return;
+         }
+         int lines = Integer.parseInt(inputStr);
       	//webbing
          buffer.setColor(Color.BLUE);
          buffer.fillRect(0, 0, N, N);
          buffer.setColor(Color.YELLOW);
          for(int k = 0; k <= 50; k++)
          {
-            buffer.drawLine(N * k / 12, 0, N, N * k / 12);
+            buffer.drawLine(N * k / lines, 0, N, N * k / lines);
          
             /************************/
-         	buffer.drawLine(N * k / 12, N, 0, N * k / 12);
-            buffer.drawLine(0, N-N * k / 12, N * k / 12,0);
-            buffer.drawLine(N, N * k / 12,N-N * k / 12,N);
+         	buffer.drawLine(N * k / lines, N, 0, N * k / lines);
+            buffer.drawLine(0, N-N * k / lines, N * k / lines,0);
+            buffer.drawLine(N, N * k / lines,N-N * k / lines,N);
             
          	/************************/
          
@@ -35,8 +47,16 @@
          int r1 = 60, r2 = 55;			//radius of the sun
       
          /************************/
- //        buffer.setColor
-      	
+         
+         int ray = Integer.parseInt(inputStr);
+         int inc = 360/ray;
+         buffer.setColor(Color.YELLOW);
+         for(int a =0;a<=360;a+=inc){
+            x1=(int)(x + size * Math.cos(a * Math.PI / 180));
+            y1=(int)(y + size * Math.sin(a * Math.PI / 180));
+            buffer.drawLine(x,y,x1,y1);
+         }
+
       	/************************/
       
          buffer.setColor(Color.BLUE.brighter());
