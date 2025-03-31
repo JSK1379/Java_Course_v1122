@@ -6,10 +6,10 @@ public class Panel01 extends JPanel{
    public void paintComponent(Graphics g){
       
       g.setColor(Color.LIGHT_GRAY);
-      g.fillRect(75,50,300,125);
+      g.fillRect(0,0,400,400);
       
-//      g.setColor(Color.GREEN.darker());
-//      g.drawline();
+      g.setColor(Color.GREEN.darker());
+      g.drawLine(0,350,400,400);
       
       g.setColor(Color.RED);
       g.drawRect(100,200,150,150);
