@@ -9,7 +9,7 @@ public class Panel01 extends JPanel{
       g.fillRect(0,0,400,400);
       
       g.setColor(Color.GREEN.darker());
-      g.drawLine(0,350,400,400);
+      g.drawLine(0,350,400,350);
       
       g.setColor(Color.RED);
       g.drawRect(100,200,150,150);
