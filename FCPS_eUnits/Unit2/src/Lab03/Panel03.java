@@ -22,6 +22,7 @@
             /************************/
          	buffer.drawLine(N * k / 12, N, 0, N * k / 12);
             buffer.drawLine(0, N-N * k / 12, N * k / 12,0);
+            buffer.drawLine(N, N * k / 12,N-N * k / 12,N);
             
          	/************************/
          
