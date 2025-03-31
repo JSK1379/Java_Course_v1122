@@ -8,22 +8,23 @@ public class Panel01 extends JPanel{
       g.setColor(Color.LIGHT_GRAY);
       g.fillRect(75,50,300,125);
       
-      g.setColor(Color.GREEN.darker());
-      g.drawline();
+//      g.setColor(Color.GREEN.darker());
+//      g.drawline();
       
       g.setColor(Color.RED);
-      g.drawRect();
+      g.drawRect(100,200,150,150);
       
       g.setColor(Color.BLACK);
-      g.fillRect(75,50,300,125);
+      g.fillRect(150,275,50,75);
       
       int x[] = {75,175,275};
       int y[] = {200,150,200};
       g.drawPolygon(x,y,3);
       
       g.setColor(Color.YELLOW);
-      g.fillOval()
+      g.fillOval(300,75,50,50);
       
-      g.setColor(Coler.WHITE);
-      g.drawString("Welcome Home",100,150);
+      g.setColor(Color.WHITE);
+      g.drawString("Welcome Home",40,40);
    }
+}
