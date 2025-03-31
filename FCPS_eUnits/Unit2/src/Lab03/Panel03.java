@@ -20,8 +20,8 @@
             buffer.drawLine(N * k / 12, 0, N, N * k / 12);
          
             /************************/
-         	//buffer.drawLine(N,0, N * k / 50, N * k / 50);
-            
+         	buffer.drawLine(N * k / 12, N, 0, N * k / 12);
+            buffer.drawLine(0, N-N * k / 12, N * k / 12,0);
             
          	/************************/
          
