@@ -10,7 +10,7 @@ public class Panel02 extends JPanel{
       int x =100;
       int y =75;
       int r =10;
-      
+      g.setColor(Color.YELLOW);
       g.fillOval(x,y,r*2,r*2);
       for(int i =1;i<10;i++){
          if(y==75||y==255){
