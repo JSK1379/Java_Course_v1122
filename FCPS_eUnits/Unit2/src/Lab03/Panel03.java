@@ -17,12 +17,12 @@
          buffer.setColor(Color.YELLOW);
          for(int k = 0; k <= 50; k++)
          {
-            buffer.drawLine(N * k / 50, 0, N, N * k / 50);
+            buffer.drawLine(N * k / 12, 0, N, N * k / 12);
          
             /************************/
-         	/*                      */
-         	/* Your code goes here. */
-         	/*                      */
+         	//buffer.drawLine(N,0, N * k / 50, N * k / 50);
+            
+            
          	/************************/
          
          }
@@ -34,9 +34,8 @@
          int r1 = 60, r2 = 55;			//radius of the sun
       
          /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
+ //        buffer.setColor
+      	
       	/************************/
       
          buffer.setColor(Color.BLUE.brighter());
