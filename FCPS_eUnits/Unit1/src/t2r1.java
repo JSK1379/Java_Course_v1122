@@ -26,23 +26,8 @@ import edu.fcps.karel2.Robot;
         turnRight();
         move();
         turnRight();
-        for(int a=0;a<8;a++){
-         move();
-        }
-        turnAround();
-        move();
-        for(int i=0;i<cA.length;i++){
-            while(nextToABeeper()){
-               pickBeeper();
-               cA[i]++;
-            }
-            if(i>0){
-               for(int j=0;j<cA[i-1];j++){
-                  putBeeper();
-               }
-            }
-            move();
-        }
+        
+        
       } 
    }
 
