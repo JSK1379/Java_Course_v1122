@@ -28,7 +28,7 @@ public class t1 {
          Thread t4 = new Thread( s );
          Thread t5 = new Thread( g );
          Thread t6 = new Thread( t );
-         Thread t7 = new Thread( th );
+         Thread t7 = new Thread( n );
          t1.start();
          t2.start();
          t3.start();
