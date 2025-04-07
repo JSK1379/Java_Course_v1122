@@ -7,7 +7,7 @@ import edu.fcps.karel2.Robot;
          super(1, 2, Display.EAST, 0);
       }
        public void run(){
-         int[] cA = new int[10];
+         int[] cA = new int[8];
          for(int i=0;i<cA.length;i++){
             while(nextToABeeper()){
                pickBeeper();
@@ -20,16 +20,17 @@ import edu.fcps.karel2.Robot;
             }
             move();
         }
-        for(int b=0;b<10;b++){
-         cA[b]=0;
+        for(int i =0;i<8;i++){
+         cA[i]=0;
         }
         turnRight();
         move();
         turnRight();
-        for(int a=0;a<10;a++){
+        for(int a=0;a<8;a++){
          move();
         }
         turnAround();
+        move();
         for(int i=0;i<cA.length;i++){
             while(nextToABeeper()){
                pickBeeper();
@@ -40,6 +41,7 @@ import edu.fcps.karel2.Robot;
                   putBeeper();
                }
             }
+            move();
         }
       } 
    }
