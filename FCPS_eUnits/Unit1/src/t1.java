@@ -14,13 +14,13 @@ public class t1 {
 		Display.setSize(36,32);
       Display.setSpeed(10);
       
-      e=new e(7,18);
-      e2 = new e(13,18);
-      c=new c(19,18);
-      s= new Five(25,18);
-      g =new g(7,9);
-      t=new Two(13,9);
-      th=new Three(19,9);
+      e e=new e(7,18);
+      e e2 = new e(13,18);
+      c c=new c(19,18);
+      Five s= new Five(25,18);
+      g g =new g(7,9);
+      Two t=new Two(13,9);
+      Nine n=new Nine(19,9);
       
          Thread t1 = new Thread( e );
          Thread t2 = new Thread( e2 );

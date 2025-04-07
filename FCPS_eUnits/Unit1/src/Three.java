@@ -1,6 +1,6 @@
 import edu.fcps.Digit;
 
-public class Three extends Digit{
+public class Three extends t11{
 
    public Three(int x, int y){
       super(x,y);
