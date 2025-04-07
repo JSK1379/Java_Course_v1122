@@ -28,12 +28,12 @@ import edu.fcps.karel2.Robot;
         turnRight();
         
         
-        for(int i=1;i<=cA.length;i++){
+        for(int i=1;i<cA.length;i++){
             move();
             move();
             while(nextToABeeper()){
                pickBeeper();
-               cA[i]++;
+               cA[i-1]++;
             }
             turnAround();
             move();
@@ -41,7 +41,6 @@ import edu.fcps.karel2.Robot;
                putBeeper();
             }
             turnAround();
-            move();
         }
       } 
    }
