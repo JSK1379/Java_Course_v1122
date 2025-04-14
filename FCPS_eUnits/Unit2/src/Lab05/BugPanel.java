@@ -18,9 +18,22 @@
          buffer.setColor(Color.YELLOW);
       
          /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
+      	Bug a=new Bug(0,0);
+         Bug b=new Bug(N,0);
+         Bug c=new Bug(N,N);
+         Bug d=new Bug(0,N);
+         
+         while(!a.sameSpot(b)){
+            a.walkTowards(b,0.1);
+            b.walkTowards(c,0.1);
+            c.walkTowards(d,0.1);
+            d.walkTowards(a,0.1);
+            
+            buffer.drawLine(a.getX(),a.getY(),b.getX(),b.getY());
+            buffer.drawLine(b.getX(),b.getY(),c.getX(),c.getY());
+            buffer.drawLine(c.getX(),c.getY(),d.getX(),d.getY());
+            buffer.drawLine(a.getX(),a.getY(),d.getX(),d.getY());
+         }
       	/************************/
       }
        public void paintComponent(Graphics g)
