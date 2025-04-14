@@ -25,5 +25,9 @@ public class Driver04a
       t.spill();//40
       f.pourInto(t);//13
       t.spill();//10
+      f.pourInto(t);//01
+      f.fill();//51
+      t.fill();//53
+      f.spill();//03
     }
 }
