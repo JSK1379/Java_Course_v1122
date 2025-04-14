@@ -28,9 +28,17 @@
       {
       
          /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
+      	super.setColor(myColor);
+         double a=12;
+         for(int i=0;i<30;i++){
+            forward(mySize);
+            turnLeft(180);
+            forward(mySize);
+            turnLeft(180);
+            turnLeft(a);
+         }   
+         
+         
       	/************************/
       
       }
@@ -38,9 +46,20 @@
       {
       
          /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
+      	setColor(Color.green);
+         super.setColor(myColor);
+         turnLeft(180);
+         forward(mySize*3);
+         turnLeft(180);
+         forward(mySize/3);
+         turnLeft(60);
+         forward(mySize/2);
+         turnLeft(180);
+         forward(mySize/2);
+         turnLeft(75);
+         forward(mySize/1.2);
+         turnLeft(180);
+         forward(mySize/1.2);
       	/************************/
       
       }
