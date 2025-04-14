@@ -35,9 +35,9 @@
       {
       
          /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
+      	for(double i=0;i<h;i+=mySize){
+            forward(x+i,y+i);
+         }
       	/************************/
       
       }

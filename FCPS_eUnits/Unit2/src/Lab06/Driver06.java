@@ -21,9 +21,17 @@
          smidge.drawShape();
       
          /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
+      	smidge = new SquareTurtle(100,250,45,20);
+         smidge.setColor(Color.red);
+         smidge.setThickness(4);
+         smidge.drawShape();
+         
+         for(i=30;i<=150;i+=30){
+            smidge = new SquareTurtle(500,250,45,i);
+            smidge.setColor(Color.yellow);
+            smidge.setThickness(2);
+            smidge.drawShape();
+         }
       	/************************/
       
       }
