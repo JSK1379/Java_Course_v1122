@@ -1,6 +1,5 @@
    //Torbert, e-mail: mr@torbert.com, website: www.mr.torbert.com
 	//version 6.17.2003
-
    import edu.fcps.Bucket;
    import javax.swing.*;
    import java.awt.*;
