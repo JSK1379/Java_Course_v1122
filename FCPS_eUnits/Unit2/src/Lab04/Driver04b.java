@@ -16,7 +16,6 @@ public class Driver04b
       Bucket f =new Bucket(5);
       Bucket fo =new Bucket(4);
       Bucket t =new Bucket(3);
-      //3 4 9 12
       f.fill();//500          5
       f.pourInto(fo);//140
       fo.spill();//100        1
@@ -31,9 +30,12 @@ public class Driver04b
       fo.pourInto(f);//402 
       fo.fill();//442         10
       f.spill();//042         6
-      f.fill();//542
-      fo.pourInto(f);//532 
-      
-      
+      t.spill();//040         4
+      fo.spill();//000
+      t.fill();//003          3
+      t.spill();
+      fo.fill();//040
+      f.fill();//540          9
+      t.fill();//543          12
     }
 }
