@@ -12,7 +12,7 @@ public class Driver04
       frame.setContentPane(new BucketPanel());
       frame.setVisible(true);
       Bucket.setSpeed(10);
-      Bucket.useTotal(false);
+      Bucket.useTotal(true);
       Bucket f =new Bucket(5);
       Bucket t =new Bucket(3);
       
