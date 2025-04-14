@@ -3,7 +3,7 @@
     public class SquareTurtle extends Turtle
    {
       private double mySize;
-   
+      private double h;
    	//*************************constructors*************************
        public SquareTurtle()
       {
@@ -35,8 +35,9 @@
       {
       
          /************************/
-      	for(double i=0;i<h;i+=mySize){
-            forward(x+i,y+i);
+         for(int j=0;j<4;j++){
+            forward(mySize);
+            turnLeft(90);
          }
       	/************************/
       

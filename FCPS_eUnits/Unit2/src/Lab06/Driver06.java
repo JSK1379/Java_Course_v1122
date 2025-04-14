@@ -26,7 +26,7 @@
          smidge.setThickness(4);
          smidge.drawShape();
          
-         for(i=30;i<=150;i+=30){
+         for(int i=30;i<=150;i+=30){
             smidge = new SquareTurtle(500,250,45,i);
             smidge.setColor(Color.yellow);
             smidge.setThickness(2);
