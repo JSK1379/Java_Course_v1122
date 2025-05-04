@@ -7,7 +7,7 @@
    {
       private static final ImageIcon Tomas = new ImageIcon("../Lab02/tj.jpg");
       private BufferedImage myImage;
-      private Graphics myBuffer;
+      private Graphics2D myBuffer;
       private int x=250;
       private int y=180;
       private Timer t1,t2; 
@@ -62,10 +62,10 @@
           public void actionPerformed(ActionEvent e)
          {
             t2.stop();
-             myBuffer.setFont(new Font("Monospaced",Font.BOLD,24));
+            myBuffer.setFont(new Font("Monospaced",Font.BOLD,24));
             myBuffer.drawString("4千萬 因為...",300,250);
             myBuffer.drawString("颱風天沒\"事千萬\"不要出門",330,280);
-            drawOval(250,80,400,100);
+            myBuffer.drawOval(250,80,400,100);
             repaint();
          }
       }
