@@ -14,7 +14,7 @@
       private BufferedImage myImage;
       private Graphics myBuffer;
       private Timer t;
-      private Polkadot pd,pd2;
+      private Polkadot pd,p2;
       private int xPos, yPos;
        public PolkaDotPanel()
       {
@@ -23,7 +23,7 @@
          myBuffer.setColor(BACKGROUND);
          myBuffer.fillRect(0, 0, FRAME, FRAME);
          pd = new Polkadot();
-         pd2 = new Polkadot(50,50,30,Color.yellow);
+         p2 = new Polkadot(50,50,30,Color.yellow);
          t = new Timer(1000, new Listener());
          t.start();
       }
@@ -38,6 +38,8 @@
          /**************************/
             myBuffer.setColor(BACKGROUND);
             myBuffer.fillRect(0,0,FRAME,FRAME);
+            p2.jump(FRAME, FRAME);
+            p2.draw(myBuffer);
          /**************************/
             pd.jump(FRAME, FRAME);
             pd.draw(myBuffer);
