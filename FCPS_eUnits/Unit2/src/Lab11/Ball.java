@@ -49,7 +49,9 @@
             setX(rightEdge - getRadius());
             dx = dx * -1; 
          }
-         else if 
+         /*else if {
+            
+         }*/
          
       }
    }
