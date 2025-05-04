@@ -49,7 +49,7 @@
            if(x>=200){
             myBuffer.setFont(new Font("Monospaced",Font.BOLD,24));
             myBuffer.drawString("颱風天要帶多少錢在出門?",300,150);
-            drawOval(250,80,400,100);
+            myBuffer.drawOval(250,80,400,100);
             repaint();
             t1.stop();
             t2.start();
