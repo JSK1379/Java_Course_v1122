@@ -23,6 +23,7 @@
          int xPos = (int)(Math.random()*(FRAME-100) + 50);
          int yPos = (int)(Math.random()*(FRAME-100)+ 50);
          ball = new Ball(xPos, yPos, 50, Color.BLACK);
+         pd= new Polkadot(50,50,30,Color.yellow);
         
          t = new Timer(5, new Listener());
          t.start();
