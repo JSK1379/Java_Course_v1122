@@ -5,30 +5,88 @@
     public class Bumper
    {
     //private fields, all ints, for a Bumper
-    //hint: the "location" of the bumper begins at its top left corner.      
-	 
-   
+    //hint: the "location" of the bumper begins at its top left corner. 
+      private int myX;    
+      private int myY;
+      private int XWidth;
+      private int YWidth;
+      private Color myColor; 
    
      //constructors
        public Bumper()         //default constructor
       {
-      
+         myX = 200;
+         myY = 200;
+         XWidth = YWidth = 50;
+         myColor = Color.BLACK;
       }
        public Bumper(int x, int y, int xWidth, int yWidth, Color c)
       {
-      
+         myX = x;
+         myY = y;
+         XWidth = xWidth;
+         YWidth = yWidth;
+         myColor = c;
       }
       
      // accessor methods  (one for each field)
+      public int getX()
+      {
+         return myX;
+      }
+      
+      public int getY()
+      {
+         return myX;
+      }
+      
+      public int getXWidth()
+      {
+         return XWidth;
+      }
+      
+      public int getYWidth()
+      {
+         return YWidth;
+      }
+      
+      public Color getColor()
+      {
+         return myColor;
+      }
    
      // modifier methods  (one for each field)
-   
+      public void setX(int x)
+      {
+         myX = x;
+      }
+      
+      public void setY(int y)
+      {
+         myY = y;
+      }
+      
+      public void setXWidth(int xWidth)
+      {
+         XWidth = xWidth;
+      }
+      
+      public void setYWidth(int yWidth)
+      {
+         YWidth = yWidth;
+      }
+      
+      public void setColor(Color c)
+      {
+         myColor = c;
+      }
      // instance methods
      // chooses a random (x,y) location.  Bumper stays entirely in the window.
         public void jump(int rightEdge, int bottomEdge)
       {
          // moves location to random (x, y) within the edges
-      
+         myX = (int)(Math.random()* (rightEdge) - XWidth);
+         myY = (int)(Math.random()* (bottomEdge) - YWidth);
       }
       
        // draws a rectangular bumper on the buffer

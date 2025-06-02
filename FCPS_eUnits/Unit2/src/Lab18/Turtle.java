@@ -18,7 +18,7 @@
       }
        public Turtle()
       {
-        // img = new BufferedImage(800,600,BufferedImage.TYPE_INT_RGB);
+         //img = new BufferedImage(800,600,BufferedImage.TYPE_INT_RGB);
          x=img.getWidth()/2;           //start at center
          y=img.getHeight()/2;          //start at center
          theta=90;                     //start facing north
@@ -33,6 +33,12 @@
       }
        public void forward(double r)
       {
-         // Your code goes here!
+         for(int i = 0;i < 200; i++)
+         {
+            x += r * Math.cos(Math.PI*(theta + 90)/180) / 200;
+            y -= r * Math.sin(Math.PI*(theta + 90)/180) / 200;
+            System.out.println(Math.cos(theta) + " + " +Math.sin(theta));
+            img.setRGB((int)x, (int)y, white);
+         }
       }
    }

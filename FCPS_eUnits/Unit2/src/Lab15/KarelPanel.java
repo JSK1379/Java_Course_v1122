@@ -29,6 +29,7 @@
          Timer t = new Timer(250, new Listener());
          t.start();
       }
+      
        public void paintComponent(Graphics g)
       {
          g.drawImage(myImage, 0, 0, getWidth(), getHeight(), null);
@@ -41,26 +42,108 @@
             myBuffer.fillRect(0, 0, WIDTH, HEIGHT);
             myBuffer.setColor(Color.red);
             for(int x = 17; x < WIDTH; x += 30) //vertical lines
-            {
-               myBuffer.drawLine(/*     */);
+            {                                   //12 times
+               myBuffer.drawLine(x, 0, x, 391);
             }
             for(int y = 9; y < HEIGHT; y += 28) //horizontal lines
-            {
-               myBuffer.drawLine(/*     */);
+            {                                   //13 times
+               myBuffer.drawLine(0, y, 395, y);
             }
             myBuffer.fillRect(107, 121, 180, 56);
             myBuffer.setColor(Color.black);
             myBuffer.setFont(new java.awt.Font("SansSerif", java.awt.Font.BOLD, 20));
             myBuffer.drawString("Karel the Robot", 125, 155);
             
-         	/*************************************
-         	Calculate karel's xPos and yPos.
-         	At the end of each row, the dir changes.
-         	The dir controls which image to use.
-         	*************************************/
+            
+            switch(dir)
+            {
+               case 0:
+                  xPos += 30;
+                  break;
+               case 1:
+                  yPos -= 28;
+                  break;
+               case 2:
+                  xPos -= 30;
+                  break;
+               case 3:
+                  yPos += 28;
+                  break;
+               default:
+                  break;
+            } 
+            
+            if(xPos <= 4 && yPos >= 362)
+            {
+               xPos = 5;
+               yPos = 361;
+               dir = 0;
+            }
+            else if(xPos >= 360 && yPos >= 350)
+            {
+               xPos = 363;
+               yPos = 361;
+               //System.out.println(xPos);
+               //System.out.println(yPos);
+               dir = 1;
+            }
+            else if(xPos >= 360 && yPos <= 20)
+            {
+               xPos = 365;
+               yPos = -5;
+               dir = 2;
+            }
+            else if(xPos <= 5 && yPos <= 20)
+            {
+               xPos = 3;
+               yPos = -3;
+               //System.out.println(xPos);
+               //System.out.println(yPos);
+               dir = 3;
+            }
+            
             myBuffer.drawImage(myArray[dir].getImage(), xPos, yPos, null);
             
             repaint();
          }
       }
    }
+      
+      /*private void moveAndTurn(int dir,int xPos, int yPos)
+      {
+         switch(dir)
+         {
+            case 0:
+               xPos += 9;
+               break;
+            case 1:
+               yPos -= 7;
+               break;
+            case 2:
+               xPos -= 9;
+               break;
+            case 3:
+               yPos += 7;
+               break;
+            default:
+               break;
+         }
+         if(xPos == 17 && yPos == 373)
+         {
+            dir = 0;
+         }
+         else if(xPos == 377 && yPos == 373)
+         {
+            dir = 1;
+         }
+         else if(xPos == 377 && yPos == 9)
+         {
+            dir = 2;
+         }
+         else if(xPos == 17 && yPos == 9)
+         {
+            dir = 3;
+         }
+         return dir, xPos, yPos;
+      }*/
+   
