@@ -16,14 +16,14 @@ public class TaiwanFlag12StarPolygon extends JPanel {
         g.fillRect(0, 0, flagWidth, flagHeight);
 
         // 畫藍底 (左上 30×30)
-        int blueW = (int)(50 * unit);
-        int blueH = (int)(30 * unit);
+        int blueW = (int)(44 * unit);
+        int blueH = (int)(28 * unit);
         g.setColor(Color.BLUE);
         g.fillRect(0, 0, blueW, blueH);
 
         // 旗中心點（藍地）
-        int cx = (int)(25 * unit);
-        int cy = (int)(15 * unit);
+        int cx = (int)(22 * unit);
+        int cy = (int)(14 * unit);
         int radius = (int)(11.25 * unit); // 外圓半徑
 
         // 建立正十二邊星型（{12/5}）
